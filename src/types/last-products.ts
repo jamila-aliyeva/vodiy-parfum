@@ -1,4 +1,4 @@
-export default interface LastProductsType {
+export default interface LastProductsype {
   _id: string;
   title: string;
   price: number;

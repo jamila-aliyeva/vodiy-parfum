@@ -1,0 +1,108 @@
+.card__data{
+bottom: -2rem;
+left: 0;
+right: 0;
+bottom: -9rem;
+margin-inline: auto;
+opacity: 0;
+transition: opacity 1s 1s;
+}
+.card__titlet{
+    font-size: 20px;
+    font-weight: 500; 
+    color:grey;
+    margin-bottom: 75rem;
+}
+
+.card__button{
+text-decoration: none;
+font-size: 20px;
+font-weight: 500; 
+color: grey;
+}
+.card__button:hover{
+text-decoration:underline;
+}
+
+.card__article:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+.card__article:not(:hover) .card__data{
+    animation: remove-data 1s forwards;
+}
+
+.card_article:hover .card_datai{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .35;
+} 
+
+.card__article:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+@keyframes show-datal{
+    50%{
+        transform: translateY(-10rem);
+        }
+        100%{
+            transform: translateY(-7rem);
+        }
+}
+@keyframes remove-overflow{
+    to{
+    overflow: initial;
+    }
+}
+
+@keyframes remove-datal{
+0%{
+transform: translateY(-7rem);
+}
+50%{
+transform: translateY(-10rem);
+}
+100%{
+transform: translateY(.5rem);
+}
+}
+@keyframes show-overflow{
+    0%{
+        overflow: initial; 
+        pointer-events: none;
+    }
+   
+    50%{
+    overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .container{ margin-inline: 1rem;
+    }
+    .card__data{
+    width: 250px; padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card__containeri{  
+        grid-template-columns: repeat(2, 1fr);
+         column-gap: 1.5rem;
+    }
+
+}
+@media screen and (min-width: 1120px){
+    .container{ height: 100vh;
+    }
+    .card__containeri{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card__img{
+        width: 348px;
+    }
+    }
+    .card__data{
+    width: 316px;
+    padding-inline:2.5rem;
+    }

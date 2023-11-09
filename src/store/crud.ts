@@ -1,4 +1,4 @@
-import { request } from "http";
+import request from "@/server";
 import React from "react";
 
 import { create } from "zustand";
