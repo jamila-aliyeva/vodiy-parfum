@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import "./style.css";
-import AllProductsList from "../list/all-products";
+import AllProductsList from "../list/all-categories";
 export const metadata: Metadata = {
   title: "Vodiy Parfum | home",
   description: "Lorem ipusum ....",

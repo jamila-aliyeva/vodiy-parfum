@@ -1,7 +1,7 @@
 "use client";
 
-import AllProductsCard from "@/components/cards/all-products";
-import useAllCategories from "@/store/all-category";
+import AllProductsCard from "@/components/cards/all-categoriesCard";
+import useAllCategories from "@/store/all-categories";
 import { useEffect } from "react";
 
 const AllProductsList = () => {
@@ -12,7 +12,7 @@ const AllProductsList = () => {
     getData();
   }, [getData]);
   return (
-    <div>
+    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
       {category.map((el) => (
         <AllProductsCard key={el._id} {...el} />
       ))}
