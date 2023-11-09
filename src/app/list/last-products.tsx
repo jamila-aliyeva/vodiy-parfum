@@ -1,6 +1,6 @@
 "use client";
 
-import LastProductCard from "@/components/cards/LastProductsCard";
+import LastProductCard from "@/components/cards/last-productsCard";
 import useLastProduct from "@/store/last-products";
 import React, { useEffect } from "react";
 

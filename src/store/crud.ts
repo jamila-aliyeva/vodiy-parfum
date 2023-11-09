@@ -22,6 +22,7 @@ const crud = <T>(url: string) => {
     closeModal: () => void;
     getData: () => void;
   }
+
   return create<DataState>()(
     devtools(
       persist(
