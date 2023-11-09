@@ -52,7 +52,7 @@ const crud = <T>(url: string) => {
                 });
 
                 setState({
-                  categories: data,
+                  data: data,
                   total: data.length,
                 });
               } finally {

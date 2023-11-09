@@ -8,12 +8,12 @@ const AllProductsCard = ({ image, _id, name }: AllproductsType) => {
   return (
     <div className="">
       <article className="card__article relative overflow-hidden">
-        <Image
+        {/* <Image
           fill
-          src={image}
+          src={image?.url}
           alt="image"
           className="card__img w-[328px] rounded-3xl"
-        />
+        /> */}
         <div className="card__data w-[380px] bg-white py-4 px-4 rounded-3xl absolute shadow-lg">
           <h2 className="card_title ">{name}</h2>
           <Link href="#" className="card__button">

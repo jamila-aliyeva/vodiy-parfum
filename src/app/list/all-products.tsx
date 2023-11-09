@@ -5,17 +5,17 @@ import useAllCategories from "@/store/all-category";
 import { useEffect } from "react";
 
 const AllProductsList = () => {
-  const { loading, data, getData } = useAllCategories();
-  console.log(data);
+  const { loading, data: category, getData } = useAllCategories();
+  console.log(category);
 
   useEffect(() => {
     getData();
   }, [getData]);
   return (
     <div>
-      {/* {category.map((el) => (
+      {category.map((el) => (
         <AllProductsCard key={el._id} {...el} />
-      ))} */}
+      ))}
     </div>
   );
 };
