@@ -92,7 +92,7 @@ transform: translateY(.5rem);
     }
 
 }
-@media screen and (min-width: 1120px){
+/* @media screen and (min-width: 1120px){
     .container{ height: 100vh;
     }
     .card__containeri{
@@ -105,4 +105,4 @@ transform: translateY(.5rem);
     .card__data{
     width: 316px;
     padding-inline:2.5rem;
-    }
+    } */

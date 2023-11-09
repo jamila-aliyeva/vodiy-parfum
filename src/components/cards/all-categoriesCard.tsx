@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const AllProductsCard = ({ image, _id, name }: AllproductsType) => {
   return (
-    <div className="" style={{ marginTop: "100px" }}>
-      <div className="">
+    <div className="">
+      <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
         <Image
           src={image.url}
           alt="img-blur-shadow"
@@ -18,7 +18,9 @@ const AllProductsCard = ({ image, _id, name }: AllproductsType) => {
         />
       </div>
       <div className="p-6">
-        <h5 className="">{name}</h5>
+        <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal">
+          {name}
+        </h5>
       </div>
       <div className="p-6 pt-0">
         <Link href={`/categories/${_id}`}>

@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className={montserrat.className}>
       <div className="container">
-        <nav className="header-nav ">
+        <nav className="header-nav">
           <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
             <div>
               <div className="flex items-center justify-between  md:py-5 md:block">
