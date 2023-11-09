@@ -1,0 +1,35 @@
+header{
+    background-color: #A6CF98 ;
+}
+.header-nav{
+    padding: 13px;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.list-wrap{
+    gap:40px;
+}
+.header-list a{
+    font-size: 18px;
+}
+.header-list a{
+    font-size: 18px;
+    position: relative;
+}
+.header-list a::before{
+    content: "";
+    width: 0px;
+    height: 1px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.2s linear;
+}
+.header-list a::before:hover{
+    width: 100%;
+}
