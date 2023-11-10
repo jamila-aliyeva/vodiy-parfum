@@ -40,6 +40,16 @@ text-decoration:underline;
 .card__article:hover{
     animation: remove-overflow 2s forwards;
 }
+.category-btn{
+    background-color: #A6CF98;
+    color: #fff;
+    transition: 0.5s;
+}
+.category-btn:hover{
+    background-color: #fff;
+   box-shadow:  0 0 5px #A6CF98 ;
+    color: grey;
+}
 
 @keyframes show-datal{
     50%{

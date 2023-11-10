@@ -1,6 +1,6 @@
-import AllproductsType from "@/types/all-categories";
 import crud from "./crud";
+import AllCategoryType from "@/types/all-categories";
 
-const useAllCategories = crud<AllproductsType>("/category");
+const useAllCategories = crud<AllCategoryType>("/category");
 
 export default useAllCategories;

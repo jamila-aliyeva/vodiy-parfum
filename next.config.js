@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["uploads-ssl.webflow.com", "res.cloudinary.com"],
   },
 };
 

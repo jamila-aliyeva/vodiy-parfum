@@ -6,8 +6,10 @@ import Link from "next/link";
 
 const AllProductsCard = ({ image, _id, name }: AllproductsType) => {
   return (
-    <div className="">
-      <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+    <div
+      className="relative flex flex-col text-gray-700 border border-sky-400 bg-transparent bg-sky-900 shadow-md w-50 rounded-xl bg-clip-border"
+      style={{ marginTop: "100px" }}>
+      <div className="relative h-56 mx-4 -mt-6 overflow-hidden  shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
         <Image
           src={image.url}
           alt="img-blur-shadow"
@@ -23,12 +25,12 @@ const AllProductsCard = ({ image, _id, name }: AllproductsType) => {
         </h5>
       </div>
       <div className="p-6 pt-0">
-        <Link href={`/categories/${_id}`}>
+        <Link href={`/category/${_id}`}>
           <button
-            className="select-none rounded-lg bg-sky-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-sky-100/60 transition-all hover:shadow-lg hover:shadow-sky-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="category-btn select-none rounded-lg bg-sky-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase  shadow-md shadow-sky-100/60 transition-all hover:shadow-lg hover:shadow-sky-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true">
-            <h3>{name}</h3>
+            <h3>see more</h3>
           </button>
         </Link>
       </div>

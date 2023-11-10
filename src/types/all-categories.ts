@@ -1,4 +1,4 @@
-export default interface AllproductsType {
+export default interface AllCategoryType {
   _id: string;
   name: string;
   image: {
